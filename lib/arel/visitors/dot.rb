@@ -154,6 +154,7 @@ module Arel
       alias :visit_FalseClass :visit_String
       alias :visit_Arel_SqlLiteral :visit_String
       alias :visit_Fixnum :visit_String
+      alias :visit_Integer :visit_String
       alias :visit_BigDecimal :visit_String
       alias :visit_Float :visit_String
       alias :visit_Symbol :visit_String

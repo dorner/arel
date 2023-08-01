@@ -291,9 +291,11 @@ module Arel
       alias :visit_Arel_Attributes_Boolean :visit_Arel_Attributes_Attribute
 
       def visit_Fixnum o; o end
-      alias :visit_Arel_Nodes_SqlLiteral :visit_Fixnum
-      alias :visit_Arel_SqlLiteral :visit_Fixnum # This is deprecated
-      alias :visit_Bignum :visit_Fixnum
+
+      def visit_Integer o; o end
+      alias :visit_Arel_Nodes_SqlLiteral :visit_Integer
+      alias :visit_Arel_SqlLiteral :visit_Integer # This is deprecated
+      alias :visit_Bignum :visit_Integer
 
       def visit_String o; quote(o, last_column) end
 

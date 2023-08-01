@@ -105,6 +105,7 @@ module Arel
       alias :visit_DateTime                      :terminal
       alias :visit_FalseClass                    :terminal
       alias :visit_Fixnum                        :terminal
+      alias :visit_Integer                       :terminal
       alias :visit_Float                         :terminal
       alias :visit_NilClass                      :terminal
       alias :visit_String                        :terminal
